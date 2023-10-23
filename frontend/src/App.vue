@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <h1>This is The App</h1>
-    <TestComponent></TestComponent>
+    <EventsView></EventsView>
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue';
-import TestComponent from '@/components/TestComponent';
-
+import EventsView from "@/views/event/EventsView";
 export default {
   name: 'App',
   components: {
-    //HelloWorld,
-    TestComponent
+    EventsView
   }
 }
 </script>

@@ -1,0 +1,33 @@
+* {
+    margin: 0 !important;
+    text-decoration: none !important;
+}
+
+
+/* avatar header */
+.avatar-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+/* filter events */
+#eventfilter {
+    margin-top: -100px !important;
+}
+
+.suggestions :is(span) {
+    cursor: pointer;
+}
