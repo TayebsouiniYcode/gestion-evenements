@@ -3,7 +3,6 @@
     text-decoration: none !important;
 }
 
-
 /* avatar header */
 .avatar-dropdown {
     display: flex;
@@ -29,5 +28,10 @@
 }
 
 .suggestions :is(span) {
+    cursor: pointer;
+}
+
+/* main section */
+.card {
     cursor: pointer;
 }
