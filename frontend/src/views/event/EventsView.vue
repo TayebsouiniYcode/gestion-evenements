@@ -2,8 +2,10 @@
   <div>
     <header-component></header-component>
     <hero-section></hero-section>
-    <main-section></main-section>
-    <footer-component></footer-component>
+    <div class="container m-auto">
+      <main-section></main-section>
+      <footer-component></footer-component>
+    </div>
   </div>
 </template>
 

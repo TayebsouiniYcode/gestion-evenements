@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <EventsView></EventsView>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import EventsView from "@/views/event/EventsView";
+//import EventsView from "@/views/event/EventsView";
 export default {
   name: 'App',
   components: {
-    EventsView
+
   }
 }
 </script>

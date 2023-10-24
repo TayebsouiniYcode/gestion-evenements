@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="clubs">
-      <div class="w-75 m-auto mt-5">
+      <div class="mt-5">
         <div class="club__title club__title--section d-flex justify-content-between">
           <h2>Clubs</h2>
           <div>
-            <a class="text-black" href="#!">See more</a>
+            <a @click="seeMoreClub()" class="text-black" href="#!">See more</a>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4 mt-5">
@@ -77,7 +77,7 @@
 
 
     <div class="gigs">
-      <div class="w-75 m-auto mt-5">
+      <div class="mt-5">
         <div class="club__title club__title--section d-flex justify-content-between">
           <h2>Gigs</h2>
           <div>
@@ -155,7 +155,7 @@
 
 
     <div class="festivals">
-      <div class="w-75 m-auto mt-5">
+      <div class="mt-5">
         <div class="club__title club__title--section d-flex justify-content-between">
           <h2>Festivals</h2>
           <div>
@@ -234,6 +234,19 @@
 </template>
 <script>
 export  default {
-  name: "MainSection"
+  name: "MainSection",
+  data() {
+    return {
+      seeMoreClubEvents: false
+    }
+  },
+  mounted() {
+  },
+  methods: {
+    seeMoreClub : function() {
+      this.seeMoreClubEvents = true;
+      console.log(this.seeMoreClubEvents);
+    }
+  }
 }
 </script>
