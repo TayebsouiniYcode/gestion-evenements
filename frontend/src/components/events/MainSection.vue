@@ -20,8 +20,8 @@
                   Explore the latest in technology and innovation at TechCon 2023. Join us for a deep dive into emerging trends and networking opportunities.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -36,8 +36,8 @@
                   Recharge your mind, body, and spirit at the Wellness Retreat. Enjoy yoga, meditation, and holistic wellness practices.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -50,8 +50,8 @@
                 <hr class="mt-2 mb-4">
                 <p class="card-text text-start">Immerse yourself in a world of creativity and art at the Artistry Showcase. Experience a diverse range of artistic expressions.</p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -66,8 +66,8 @@
                   Get ready for a music extravaganza! MusicFest 2023 brings together top artists for an unforgettable musical experience.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -96,8 +96,8 @@
                   Join the Startup Summit to learn from successful entrepreneurs, pitch your ideas, and connect with investors.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -112,8 +112,8 @@
                   Indulge in a culinary adventure at the Foodie Fiesta. Taste delectable dishes from around the world and savor gourmet delights.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -128,8 +128,8 @@
                   Unleash your style at Fashion Forward. Witness runway shows, meet fashion designers, and get the latest fashion insights.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -144,8 +144,8 @@
                   Discover solutions for a sustainable future at the Environmental Symposium. Engage in discussions about conservation and eco-friendly practices.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -174,8 +174,8 @@
                   Cheer for your favorite teams at the Sports Extravaganza. Experience the thrill of athletic competition and sportsmanship.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -190,8 +190,8 @@
                   Celebrate the art of filmmaking at the Film Festival. Watch thought-provoking films and interact with filmmakers.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -206,8 +206,8 @@
                   Dive into the world of science and innovation at the Expo. Experience groundbreaking discoveries and experiments.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
@@ -222,8 +222,8 @@
                   Make a difference at the Charity Gala. Contribute to noble causes and support philanthropic initiatives.
                 </p>
               </div>
-              <div class="card-footer text-muted">
-                2 days ago
+              <div class="card-footer text-success">
+                23 tickets disponibles
               </div>
             </div>
           </div>
