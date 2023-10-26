@@ -13,10 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('event_type', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('description');
+        Schema::table('event', function (Blueprint $table) {
+            $table->string('image');
         });
     }
 
@@ -27,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::drop('event_type');
+        Schema::table('event', function (Blueprint $table) {
+            $table->dropColumn('image');
+        });
     }
 };
