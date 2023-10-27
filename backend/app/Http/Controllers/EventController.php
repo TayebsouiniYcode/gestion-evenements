@@ -31,7 +31,6 @@ class EventController extends Controller
 //        ]);
 
 
-
         $input = $request->all();
 
         if ($image = $request->file('image')) {
