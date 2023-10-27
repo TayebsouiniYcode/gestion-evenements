@@ -12,14 +12,20 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form class="d-flex flex-column gap-3" @submit.prevent="submitForm">
+            <form class="d-flex flex-column gap-3" @submit.prevent="submitForm" @submit="checkForm">
               <div class="form-group text-start">
                 <label class="form-label" for="name">Nom de l'événement</label>
-                <input v-model="name" class="form-control" type="text" name="name" id="name" value="" placeholder="Entrez un nom valide" required="true">
+                <input v-model="name" class="form-control" type="text" name="name" id="name" value="" placeholder="Entrez un nom valide">
+                <p v-if="!nameValidation" class="text-danger">
+                  {{ message }}
+                </p>
               </div>
               <div class="form-group text-start">
                 <label class="form-label" for="description">Description</label>
                 <textarea v-model="description" class="form-control" cols="6" rows="6" id="description" placeholder="Description de l'événement"></textarea>
+                <p v-if="!descriptionValidation" class="text-danger">
+                  {{ message }}
+                </p>
               </div>
               <div class="form-group text-start">
                 <label class="form-label" for="date">Date</label>
@@ -33,14 +39,11 @@
                 <label class="form-label" for="image">Image</label>
                 <input @change="onFileChange" type="file" class="form-control" id="image" />
               </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
+          <div class="modal-footer d-flex gap-5">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+          </div>
+          </form>
           </div>
         </div>
       </div>
@@ -50,6 +53,9 @@
 
 <script>
 import axios from "axios";
+import router from "@/router/router";
+
+const eventNameRegex = /^[A-Za-z0-9\s]+$/;
 
 export default {
   name: "DashboardEventActionsArea",
@@ -60,6 +66,8 @@ export default {
       date: '',
       time: '',
       image: null,
+      nameValidation: true,
+      descriptionValidation: true,
     };
   },
   methods: {
@@ -84,12 +92,33 @@ export default {
       })
       .then(response => {
         console.log('Event created:', response.data);
+        router.go();
       })
       .catch(error => {
         console.error('Error creating event:', error);
       });
     },
+    checkForm: function () {
+      if (this.name === '') {
+        this.nameValidation = false;
+        this.message = "Le nom ne doit pas vide";
+      } else if (!eventNameRegex.test(this.name)) {
+        this.nameValidation = false;
+        this.message = "la format de nom est un correcte, utilisation des lettres, chiffres et les espaces seulement";
+      } else {
+        this.nameValidation = true;
+      }
 
+      if (this.description === '') {
+        this.descriptionValidation = false;
+        this.message = "La description ne doit pas vide";
+      } else if (!eventNameRegex.test(this.description)) {
+        this.descriptionValidation = false;
+        this.message = "la format de la description  est un correcte, utilisation des lettres, chiffres et les espaces seulement";
+      } else {
+        this.descriptionValidation = true;
+      }
+    }
   }
 }
 </script>
