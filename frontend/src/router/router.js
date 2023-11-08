@@ -6,6 +6,7 @@ import eventsView from "@/views/event/EventsView";
 import testComponent from "@/components/TestComponent";
 import DashboardView from "@/views/dashboard/DashboardView";
 import DashboardEvents from "@/views/dashboard/DashboardEvents";
+import EventDetailsView from "@/views/event/EventDetailsView";
 
 Vue.use(VueRouter);
 
@@ -13,7 +14,8 @@ const routes = [
     { path: '/', component: eventsView },
     { path: '/test', component: testComponent},
     { path: '/dashboard', component: DashboardView},
-    { path: '/dashboard/events', component: DashboardEvents}
+    { path: '/dashboard/events', component: DashboardEvents},
+    { path: '/event/:id', name: 'event-details', component: EventDetailsView}
 ];
 
 const router = new VueRouter({

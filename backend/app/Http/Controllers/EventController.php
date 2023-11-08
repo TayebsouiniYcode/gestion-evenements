@@ -10,9 +10,15 @@ use Illuminate\Support\Facades\Date;
 class EventController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
         return Event::all();
+//        $events = QueryBuilder::for (Link::class)
+//            ->allowFilters(['name', 'date'])
+//            ->allowSorts('name', 'date', 'time')
+//            ->paginate($request->get('prePage', 12));
+//
+//        return $request()->json($links);
     }
 
     public function create(Request $request)
@@ -47,7 +53,13 @@ class EventController extends Controller
 
     public function show($id)
     {
-        //
+        $event = Event::find($id);
+
+        if (!$event) {
+            return response()->json(['error' => 'Event not found'], 404);
+        }
+
+        return response()->json(['event' => $event]);
     }
 
     public function edit($id)

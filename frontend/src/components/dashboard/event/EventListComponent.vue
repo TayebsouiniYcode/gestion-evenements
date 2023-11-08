@@ -29,7 +29,7 @@
           <p class="text-muted mb-0"> {{ event.time }}</p>
         </td>
         <td>
-          <button type="button" class="btn btn-link btn-sm btn-rounded">
+          <button type="button" class="btn btn-link btn-sm btn-rounded text-dark">
             Edit
           </button>
         </td>

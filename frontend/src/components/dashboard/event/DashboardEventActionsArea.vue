@@ -1,14 +1,14 @@
 <template>
   <div class="d-flex justify-content-end">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addEventModal">
+    <button type="button" class="btn btn-primary bg-black border-0" data-bs-toggle="modal" data-bs-target="#addEventModal">
       ajouter événement
     </button>
 
-    <div class="modal fade" id="addEventModal" tabindex="-1" aria-labelledby="addEventModalLabel" aria-hidden="true">
+    <div class="modal fade" id="addEventModal" tabindex="-1" aria-labelledby="addEventModalLabel" aria-hidden="true" style="padding-left: 40% !important; padding-top: 5% !important;">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ajouter un événement</h5>
+          <div class="modal-header bg-dark text-light">
+            <h5 class="modal-title" id="exampleModalLabel" >Ajouter un événement</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -31,17 +31,17 @@
                 <label class="form-label" for="date">Date</label>
                 <input v-model="date" type="date" class="form-control" id="date" />
               </div>
-              <div class="form-group">
+              <div class="form-group text-start">
                 <label class="form-label" for="time">Time</label>
                 <input v-model="time" type="time" class="form-control" id="time" />
               </div>
-              <div class="form-group">
+              <div class="form-group text-start">
                 <label class="form-label" for="image">Image</label>
                 <input @change="onFileChange" type="file" class="form-control" id="image" />
               </div>
-          <div class="modal-footer d-flex gap-5">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Ajouter</button>
+          <div class="modal-footer d-flex gap-2">
+            <button type="button" class="btn btn-secondary bg-light text-dark w-100" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary bg-dark w-100">Ajouter</button>
           </div>
           </form>
           </div>
