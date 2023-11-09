@@ -109,15 +109,15 @@ export default {
         this.nameValidation = true;
       }
 
-      if (this.description === '') {
-        this.descriptionValidation = false;
-        this.message = "La description ne doit pas vide";
-      } else if (!eventNameRegex.test(this.description)) {
-        this.descriptionValidation = false;
-        this.message = "la format de la description  est un correcte, utilisation des lettres, chiffres et les espaces seulement";
-      } else {
-        this.descriptionValidation = true;
-      }
+      // if (this.description === '') {
+      //   this.descriptionValidation = false;
+      //   this.message = "La description ne doit pas vide";
+      // } else if (!eventNameRegex.test(this.description)) {
+      //   this.descriptionValidation = false;
+      //   this.message = "la format de la description  est un correcte, utilisation des lettres, chiffres et les espaces seulement";
+      // } else {
+      //   this.descriptionValidation = true;
+      // }
     }
   }
 }
