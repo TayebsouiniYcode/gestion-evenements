@@ -11,7 +11,7 @@
         <input class="form-control p-3" type="datetime-local" name="time" value="" placeholder="Any time">
       </div>
       <div class="form-group w-25">
-        <input class="form-control btn btn-primary p-3" name="search" type="submit" value="SEARCH">
+        <input class="form-control btn btn-primary p-3 bg-dark border-0 text-light" name="search" type="submit" value="SEARCH">
       </div>
     </form>
     <div class="suggestions d-flex gap-4 mt-5">

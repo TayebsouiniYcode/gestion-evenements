@@ -36,6 +36,12 @@
                 <ul class="dropdown-menu" aria-labelledby="userDropdown">
                   <li><a class="dropdown-item" href="#">Profile</a></li>
                   <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li>
+                    <router-link to="/dashboard" class="dropdown-item">Dashboard</router-link>
+                  </li>
+                  <li>
+                    <router-link to="/panier" class="dropdown-item">Panier</router-link>
+                  </li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
