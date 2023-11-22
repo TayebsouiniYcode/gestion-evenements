@@ -8,7 +8,7 @@ import DashboardView from "@/views/dashboard/DashboardView";
 import DashboardEvents from "@/views/dashboard/DashboardEvents";
 import EventDetailsView from "@/views/event/EventDetailsView";
 import PanierView from "@/views/shared/PanierView";
-
+//import Dashboard from "@/views/dashboard/Dashboard";
 Vue.use(VueRouter);
 
 const routes = [
@@ -18,6 +18,7 @@ const routes = [
     { path: '/dashboard/events', component: DashboardEvents},
     { path: '/event/:id', name: 'event-details', component: EventDetailsView},
     { path: '/panier', name: 'panier', component: PanierView}
+
 ];
 
 const router = new VueRouter({

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { useCartStore} from "@/states/panier";
+import { useCartStore } from "@/states/panier";
 
 export default {
   name: "PanierView",
