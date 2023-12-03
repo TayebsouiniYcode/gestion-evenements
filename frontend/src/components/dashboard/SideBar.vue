@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+  <div class="side-bar d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 100%;">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
       <span class="fs-4">YouCode Events</span>
@@ -14,21 +14,6 @@
       <li class="nav-item">
         <router-link to="/dashboard/events" class="nav-link text-white" aria-current="page">
           Events
-        </router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/dashboard" class="nav-link text-white" aria-current="page">
-          Dashboard
-        </router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/dashboard" class="nav-link text-white" aria-current="page">
-          Dashboard
-        </router-link>
-      </li>
-      <li class="nav-item">
-        <router-link to="/dashboard" class="nav-link text-white" aria-current="page">
-          Dashboard
         </router-link>
       </li>
     </ul>
@@ -54,3 +39,12 @@ export default {
   name: "SideBar",
 }
 </script>
+
+<style>
+.side-bar {
+  height: 100vh;
+  width: 280px;
+  background-color: #2b2b2b;
+  color: white;
+}
+</style>
